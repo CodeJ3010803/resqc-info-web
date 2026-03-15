@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/terms-policy",
+      "destination": "/terms-policy.html"
+    },
+    {
+      "source": "/terms-policy/",
+      "destination": "/terms-policy.html"
+    }
+  ]
+}

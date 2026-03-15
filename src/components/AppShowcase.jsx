@@ -57,10 +57,11 @@ const AppShowcase = () => {
                                 <h4 className="text-[10px] md:text-xs font-black text-blue-600 uppercase tracking-[0.2em] mb-4">Core Capabilities</h4>
                                 <ul className="space-y-4 md:space-y-5">
                                     {[
-                                        "One-tap SOS dispatch with GPS pinning",
-                                        "AI-optimized route for responders",
-                                        "Live encrypted mission chat",
-                                        "Emergency broadcast notifications"
+                                        "Automatic GPS location sharing",
+                                        "Multimedia evidence uploads (photo, video, voice)",
+                                        "Instant push notifications for emergency alerts",
+                                        "A-Star optimized navigation for responders",
+                                        "End-to-end calls and live chat"
                                     ].map((feature, index) => (
                                         <li key={index} className="flex items-start gap-3">
                                             <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" strokeWidth={2.5} />

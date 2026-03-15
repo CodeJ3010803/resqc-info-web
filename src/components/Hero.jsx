@@ -80,9 +80,9 @@ const Hero = () => {
                                 <div className="absolute -inset-6 bg-blue-100/40 rounded-full blur-3xl z-0" />
                                 
                                 <img 
-                                    src="/assets/resqc-mobile-app.png" 
+                                    src="/assets/resqc3%20phone%20nobg.png" 
                                     alt="ResQC Mobile App" 
-                                    className="relative z-10 w-[240px] md:w-[380px] h-auto drop-shadow-xl"
+                                    className="relative z-10 w-[460px] md:w-[760px] lg:w-[900px] h-auto drop-shadow-xl"
                                 />
                             </motion.div>
                         </Reveal>

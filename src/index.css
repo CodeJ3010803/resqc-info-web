@@ -21,5 +21,17 @@
 }
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+span,
+li,
+a,
+button,
+input,
+textarea,
+label,
+small {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

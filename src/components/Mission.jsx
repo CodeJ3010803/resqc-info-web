@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Scale, Radio, Users, ChevronRight } from "lucide-react";
+import { Heart, Scale, Radio, Users } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const MissionCard = ({ icon: Icon, title, description, iconColor, iconBg, hoverBorder }) => (
@@ -88,17 +88,7 @@ const OurMission = () => {
               
               {/* Link with Hover Underline */}
               <div className="relative inline-block">
-                <a 
-                  href="#" 
-                  className="group inline-flex items-center gap-3 text-[18px] text-[#0F172A] font-bold transition-all"
-                >
-                  <span className="relative">
-                    Read our full manifesto
-                    {/* The specific red underline from your image */}
-                    <span className="absolute -bottom-2 left-0 w-full h-[2px] bg-slate-200 transition-colors group-hover:bg-[#FF0D29]" />
-                  </span>
-                  <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </a>
+                   {/* The manifesto link has been removed */}
               </div>
             </Reveal>
           </div>

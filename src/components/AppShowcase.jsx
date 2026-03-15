@@ -34,7 +34,7 @@ const AppShowcase = () => {
                             {/* Actual App Image Container */}
                             <div className="relative z-10 w-48 md:w-56 mb-6 group-hover:-translate-y-2 transition-transform duration-500">
                                 <img 
-                                    src="/assets/resqc-mobile-app.png" 
+                                    src="/assets/resqc onboarding final.png" 
                                     alt="ResQC Mobile App Interface" 
                                     className="w-full h-auto drop-shadow-[0_25px_25px_rgba(0,0,0,0.5)] rounded-[2.5rem]"
                                 />

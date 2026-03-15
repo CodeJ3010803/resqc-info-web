@@ -54,10 +54,6 @@ const Hero = () => {
                                         <p className="text-xl font-semibold -mt-0.5">Coming Soon</p>
                                     </div>
                                 </button>
-
-                                <button className="bg-white text-[#1e293b] border border-slate-200 px-8 py-4 rounded-[20px] text-lg font-bold transition-all hover:bg-slate-50 active:scale-95 shadow-sm">
-                                    Watch Demo
-                                </button>
                             </div>
 
                             <p className="mt-4 text-sm text-slate-500 font-medium">Android available now. iOS coming soon.</p>

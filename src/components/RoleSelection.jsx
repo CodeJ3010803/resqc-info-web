@@ -10,6 +10,10 @@ import { Reveal } from "./Reveal";
 const RoleSelection = () => {
   const [expandedRole, setExpandedRole] = useState(null);
 
+  const toggleRole = (role) => {
+    setExpandedRole((prev) => (prev === role ? null : role));
+  };
+
   const citizenFeatures = [
     { icon: MapPin, title: "Automatic GPS Location", desc: "Your precise location is captured instantly and shared with responders" },
     { icon: Camera, title: "Multimedia Evidence", desc: "Attach photos, videos, and voice notes to your emergency report" },
@@ -55,7 +59,8 @@ const RoleSelection = () => {
             <div 
               onMouseEnter={() => setExpandedRole('citizen')}
               onMouseLeave={() => setExpandedRole(null)}
-              className={`transition-all duration-500 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 bg-white cursor-default hover:shadow-2xl ${expandedRole === 'citizen'
+              onClick={() => toggleRole('citizen')}
+              className={`transition-all duration-500 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 bg-white cursor-pointer hover:shadow-2xl ${expandedRole === 'citizen'
                 ? 'ring-2 ring-red-500 shadow-2xl shadow-red-100'
                 : 'border border-slate-100 shadow-xl hover:border-red-200'
               }`}
@@ -98,7 +103,8 @@ const RoleSelection = () => {
             <div 
               onMouseEnter={() => setExpandedRole('responder')}
               onMouseLeave={() => setExpandedRole(null)}
-              className={`transition-all duration-500 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 bg-white cursor-default hover:shadow-2xl ${expandedRole === 'responder'
+              onClick={() => toggleRole('responder')}
+              className={`transition-all duration-500 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 bg-white cursor-pointer hover:shadow-2xl ${expandedRole === 'responder'
                 ? 'ring-2 ring-blue-500 shadow-2xl shadow-blue-100'
                 : 'border border-slate-100 shadow-xl hover:border-blue-200'
               }`}

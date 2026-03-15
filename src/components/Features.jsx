@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const FeatureCard = ({ icon: Icon, title, subtitle, iconBg, iconColor, isOpen, onMouseEnter, onMouseLeave, details }) => {
+const FeatureCard = ({ icon: Icon, title, subtitle, iconBg, iconColor, isOpen, onMouseEnter, onMouseLeave, onToggle, details }) => {
   return (
     <div 
       className="flex flex-col gap-3 transition-all duration-500"
@@ -13,6 +13,7 @@ const FeatureCard = ({ icon: Icon, title, subtitle, iconBg, iconColor, isOpen, o
       onMouseLeave={onMouseLeave}
     >
       <div
+        onClick={onToggle}
         className={`w-full bg-white border rounded-[2rem] p-5 md:p-6 text-center transition-all duration-300 flex flex-col items-center select-none relative overflow-hidden cursor-default ${isOpen
             ? `border-transparent ring-2 ${iconColor === 'text-blue-500' ? 'ring-blue-400' : 'ring-red-400'} shadow-2xl`
             : 'border-slate-100 shadow-sm'
@@ -24,7 +25,7 @@ const FeatureCard = ({ icon: Icon, title, subtitle, iconBg, iconColor, isOpen, o
           <Icon className={`w-6 h-6 md:w-7 md:h-7 ${iconColor}`} strokeWidth={1.5} />
         </div>
 
-        <h3 className="relative z-10 text-sm md:text-base font-bold text-slate-800 tracking-tight mb-2">{title}</h3>
+        <h3 className="relative z-10 text-base md:text-base font-bold text-slate-800 tracking-tight mb-2">{title}</h3>
         <p className="relative z-10 text-slate-500 text-[11px] md:text-xs leading-relaxed mb-4 px-1 line-clamp-2">{subtitle}</p>
 
         <div className="mt-auto">
@@ -57,9 +58,9 @@ const FeatureCard = ({ icon: Icon, title, subtitle, iconBg, iconColor, isOpen, o
 
           <div className="grid grid-cols-2 gap-2 pt-5 border-t border-slate-50">
             {details.stats.map((stat, idx) => (
-              <div key={idx} className={`rounded-2xl p-2 md:p-3 text-center transition-colors ${iconBg}`}>
-                <p className={`text-xs md:text-sm font-black ${iconColor}`}>{stat.value}</p>
-                <p className="text-[8px] md:text-[9px] text-slate-500 font-bold uppercase tracking-tighter">{stat.label}</p>
+              <div key={idx} className={`rounded-2xl p-2.5 md:p-3 text-center transition-colors ${iconBg}`}>
+                <p className={`text-sm md:text-sm font-black ${iconColor}`}>{stat.value}</p>
+                <p className="text-[9px] md:text-[9px] text-slate-500 font-bold uppercase tracking-tighter">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -155,6 +156,7 @@ const Features = () => {
                 isOpen={activeFeature === feature.id}
                 onMouseEnter={() => setActiveFeature(feature.id)}
                 onMouseLeave={() => setActiveFeature(null)}
+                onToggle={() => setActiveFeature((prev) => (prev === feature.id ? null : feature.id))}
               />
             ))}
           </div>

@@ -97,6 +97,15 @@ const Navbar = () => {
                                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full" />
                                 </a>
                             ))}
+
+                            <a
+                                href="/terms-policy.html"
+                                className={`text-[11px] lg:text-[13px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:text-red-500 relative group
+                                    ${isScrolled ? "text-[#475569]" : "text-[#1e293b]"}`}
+                            >
+                                Terms & Policy
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full" />
+                            </a>
                         </div>
 
                         <button className="bg-[#121b2e] text-white px-4 py-2 lg:px-7 lg:py-2.5 rounded-full text-[11px] lg:text-[12px] font-bold uppercase tracking-[0.15em] 
@@ -141,6 +150,17 @@ const Navbar = () => {
                                     {item}
                                 </motion.a>
                             ))}
+
+                            <motion.a
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.45 }}
+                                href="/terms-policy.html"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="text-3xl font-bold text-[#1e293b] uppercase tracking-[0.2em] hover:text-red-500 transition-colors"
+                            >
+                                Terms & Policy
+                            </motion.a>
 
                             <motion.button
                                 initial={{ opacity: 0, y: 20 }}

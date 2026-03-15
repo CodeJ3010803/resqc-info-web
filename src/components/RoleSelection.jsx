@@ -2,7 +2,7 @@ import { useState } from "react";
 import {
   Users, Ambulance, ChevronDown, ChevronUp,
   MapPin, Camera, CheckCircle, MessageSquare,
-  Bell, ShieldCheck, ChevronRight, Navigation,
+  Bell, ShieldCheck, ChevronRight, Navigation, Share2,
   Users as MultiUser, FileText
 } from "lucide-react";
 import { Reveal } from "./Reveal";
@@ -16,6 +16,7 @@ const RoleSelection = () => {
     { icon: CheckCircle, title: "Emergency Type Selection", desc: "Choose from predefined categories for faster routing" },
     { icon: MessageSquare, title: "Live Chat & Call", desc: "Communicate directly with responders in real-time" },
     { icon: Bell, title: "Track Emergency Status", desc: "Monitor your request status with live updates and ETA" },
+    { icon: Share2, title: "Share Live Location with Family", desc: "Share a secure link so family can view your live emergency map, responder status, and ETA in real-time" },
   ];
 
   const responderFeatures = [

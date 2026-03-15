@@ -77,16 +77,16 @@ const Features = () => {
     {
       id: "gps",
       icon: MapPin,
-      title: "Real-time GPS",
-      subtitle: "Precise location tracking for faster response",
+      title: "Mapbox Live Maps",
+      subtitle: "Real-time location tracking powered by Mapbox",
       iconBg: "bg-blue-50",
       iconColor: "text-blue-500",
       details: {
-        tag: "High-Precision Positioning",
+        tag: "Mapbox Mapping Engine",
         items: [
-          { icon: Target, text: "Eliminates location ambiguity and guesswork" },
-          { icon: Satellite, text: "Triangulates GPS, GLONASS, and Galileo" },
-          { icon: Zap, text: "Sub-second location sharing with dispatch" }
+          { icon: Target, text: "Mapbox map matching improves incident pinpointing" },
+          { icon: Satellite, text: "Mapbox tiles and geocoding keep location context accurate" },
+          { icon: Zap, text: "Live location updates synced to dispatch in real time" }
         ],
         stats: [
           { label: "Accuracy", value: "±5-10m" },
@@ -117,16 +117,16 @@ const Features = () => {
     {
       id: "alerts",
       icon: Bell,
-      title: "Critical Alerts",
-      subtitle: "Instant notifications for emergency situations",
+      title: "Firebase Alerts",
+      subtitle: "Cloud-backed notifications and incident updates",
       iconBg: "bg-red-50",
       iconColor: "text-red-500",
       details: {
-        tag: "Omni-Channel Alerts",
+        tag: "Firebase Cloud Database",
         items: [
-          { icon: Bell, text: "Push, SMS, and high-priority siren tones" },
-          { icon: Target, text: "Geo-fenced targeting for nearby units" },
-          { icon: Info, text: "Smart priority-based queuing system" }
+          { icon: Bell, text: "Incident records and status updates are stored in Firebase" },
+          { icon: Target, text: "Cloud sync keeps citizen and responder views aligned" },
+          { icon: Info, text: "Low-latency updates support real-time emergency workflows" }
         ],
         stats: [
           { label: "Latency", value: "< 2.5s" },

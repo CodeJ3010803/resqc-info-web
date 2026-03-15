@@ -30,7 +30,7 @@ const Hero = () => {
                             </div>
 
                             {/* Action Buttons */}
-                            <div className="mt-12 flex flex-row items-center gap-4">
+                            <div className="mt-12 flex flex-wrap items-center gap-4">
                                 <button className="bg-black text-white px-6 py-3 rounded-[20px] flex items-center gap-3 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10">
                                     <svg viewBox="0 0 512 512" className="w-7 h-7" fill="currentColor">
                                         <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 58.9-34.1c18-10.3 18-28.7 0-38.8zm-146.9 52.1L104.6 499l280.8-161.2-60.1-60.1z" />
@@ -41,10 +41,26 @@ const Hero = () => {
                                     </div>
                                 </button>
 
+                                <button
+                                    className="bg-slate-100 text-slate-500 border border-slate-200 px-6 py-3 rounded-[20px] flex items-center gap-3 cursor-not-allowed opacity-80"
+                                    disabled
+                                    aria-label="App Store download coming soon"
+                                >
+                                    <svg viewBox="0 0 384 512" className="w-7 h-7" fill="currentColor" aria-hidden="true">
+                                        <path d="M318.7 268.7c-.2-49.2 40.2-72.8 42-73.9-23-33.7-58.8-38.3-71.5-38.8-30.4-3.1-59.5 18-74.9 18-15.4 0-39.1-17.6-64.3-17.1-33 .5-63.5 19.2-80.5 48.8-34.4 59.6-8.8 147.9 24.7 196.3 16.4 23.6 35.9 50.1 61.6 49.2 24.7-1 34-15.9 63.8-15.9 29.8 0 38.2 15.9 64.4 15.4 26.6-.5 43.4-24.1 59.7-47.8 18.8-27.4 26.6-53.8 27-55.2-.6-.2-51.8-19.9-52-78.9zM269.1 123.9c13.6-16.5 22.7-39.4 20.2-62.3-19.6.8-43.2 13-57.2 29.5-12.5 14.5-23.5 37.7-20.6 59.8 21.8 1.7 43.9-11.1 57.6-27z" />
+                                    </svg>
+                                    <div className="text-left leading-tight">
+                                        <p className="text-[10px] uppercase font-medium tracking-wider text-slate-400">App Store</p>
+                                        <p className="text-xl font-semibold -mt-0.5">Coming Soon</p>
+                                    </div>
+                                </button>
+
                                 <button className="bg-white text-[#1e293b] border border-slate-200 px-8 py-4 rounded-[20px] text-lg font-bold transition-all hover:bg-slate-50 active:scale-95 shadow-sm">
                                     Watch Demo
                                 </button>
                             </div>
+
+                            <p className="mt-4 text-sm text-slate-500 font-medium">Android available now. iOS coming soon.</p>
                         </Reveal>
                     </div>
 

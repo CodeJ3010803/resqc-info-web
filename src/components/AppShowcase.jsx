@@ -89,6 +89,7 @@ const AppShowcase = () => {
                                         <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">Android Build</span>
                                     </div>
                                     <p className="text-[11px] font-medium text-slate-400">Ver 5.0.12 • Feb 2026</p>
+                                    <p className="text-[11px] font-medium text-slate-400">iOS version coming soon</p>
                                 </div>
                             </div>
                         </div>

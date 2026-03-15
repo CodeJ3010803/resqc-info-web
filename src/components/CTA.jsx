@@ -57,7 +57,7 @@ const CTA = () => {
           {/* Feature Badges - "Glassmorphism" Style */}
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 px-4 md:px-0">
             {[
-              { icon: Smartphone, label: "iOS & Android", color: "text-blue-400" },
+              { icon: Smartphone, label: "Android Available • iOS Coming Soon", color: "text-blue-400" },
               { icon: Shield, label: "Encrypted Data", color: "text-emerald-400" },
               { icon: Zap, label: "Real-time Sync", color: "text-amber-400" }
             ].map((badge, idx) => (

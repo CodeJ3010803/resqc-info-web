@@ -3,7 +3,7 @@ import {
   Users, Ambulance, ChevronDown, ChevronUp,
   MapPin, Camera, CheckCircle, MessageSquare,
   Bell, ShieldCheck, ChevronRight, Navigation,
-  Shield, Users as MultiUser, FileText
+  Users as MultiUser, FileText
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
@@ -22,8 +22,7 @@ const RoleSelection = () => {
     { icon: Bell, title: "Instant Push Notifications", desc: "Receive alerts immediately when emergencies match your profile" },
     { icon: Navigation, title: "A-Star Optimized Navigation", desc: "Get the fastest route considering traffic conditions" },
     { icon: MapPin, title: "Real-Time Location Tracking", desc: "See citizen location updates and coordinate with teams" },
-    { icon: Shield, title: "Request Backup Support", desc: "Alert additional responders when situations require more resources" },
-    { icon: MultiUser, title: "Multi-Party Communication", desc: "Group chat and calls with other responders and dispatch" },
+    { icon: MultiUser, title: "End-to-End Calls & Chat", desc: "Secure one-to-one end-to-end video calls, voice calls, and live chat" },
     { icon: FileText, title: "Status Updates & Response Log", desc: "Document actions taken and update status in real-time" },
   ];
 

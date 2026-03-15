@@ -31,13 +31,17 @@ const Hero = () => {
 
                             {/* Action Buttons */}
                             <div className="mt-10 md:mt-12 flex flex-wrap items-center gap-3 md:gap-4">
-                                <button className="w-full sm:w-auto bg-black text-white px-5 md:px-6 py-3 rounded-[20px] flex items-center justify-center sm:justify-start gap-3 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-black/10">
-                                    <svg viewBox="0 0 512 512" className="w-7 h-7" fill="currentColor">
+                                <button
+                                    className="w-full sm:w-auto bg-slate-100 text-slate-500 border border-slate-200 px-5 md:px-6 py-3 rounded-[20px] flex items-center justify-center sm:justify-start gap-3 cursor-not-allowed opacity-80"
+                                    disabled
+                                    aria-label="Google Play download coming soon"
+                                >
+                                    <svg viewBox="0 0 512 512" className="w-7 h-7" fill="currentColor" aria-hidden="true">
                                         <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 58.9-34.1c18-10.3 18-28.7 0-38.8zm-146.9 52.1L104.6 499l280.8-161.2-60.1-60.1z" />
                                     </svg>
                                     <div className="text-left leading-tight">
-                                        <p className="text-[10px] uppercase font-medium tracking-wider text-gray-300">Get it on</p>
-                                        <p className="text-lg md:text-xl font-semibold -mt-0.5">Google Play</p>
+                                        <p className="text-[10px] uppercase font-medium tracking-wider text-slate-400">Google Play</p>
+                                        <p className="text-lg md:text-xl font-semibold -mt-0.5">Coming Soon</p>
                                     </div>
                                 </button>
 
@@ -56,7 +60,7 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <p className="mt-4 text-sm text-slate-500 font-medium">Android available now. iOS coming soon.</p>
+                            <p className="mt-4 text-sm text-slate-500 font-medium">Android and iOS versions coming soon.</p>
                         </Reveal>
                     </div>
 

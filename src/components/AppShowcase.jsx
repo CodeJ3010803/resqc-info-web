@@ -72,15 +72,19 @@ const AppShowcase = () => {
                             </div>
 
                             <div className="flex flex-col sm:flex-row items-center gap-6 border-t border-slate-50 pt-8">
-                                <button className="bg-black hover:bg-slate-800 text-white px-8 py-4 rounded-2xl flex items-center justify-center gap-4 transition-all active:scale-95 shadow-lg shadow-slate-200 group w-full sm:w-auto">
+                                <button
+                                    className="bg-slate-100 text-slate-500 border border-slate-200 px-8 py-4 rounded-2xl flex items-center justify-center gap-4 cursor-not-allowed opacity-80 w-full sm:w-auto"
+                                    disabled
+                                    aria-label="Google Play download coming soon"
+                                >
                                     <div className="w-8 h-8 flex items-center justify-center shrink-0">
-                                        <svg viewBox="0 0 24 24" className="w-7 h-7 fill-white" xmlns="http://www.w3.org/2000/svg">
+                                        <svg viewBox="0 0 24 24" className="w-7 h-7 fill-slate-500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path d="M17.523 15.3414L20.355 13.7024L17.523 12.0634V15.3414ZM3.65503 3.31036C3.54103 3.44736 3.47503 3.63336 3.47503 3.84736V20.1524C3.47503 20.3664 3.54103 20.5524 3.65503 20.6894L12.164 12.1804L3.65503 3.31036ZM13.164 11.1804L16.523 9.24136L4.17203 2.14436C4.17203 2.14436 4.17103 2.14336 4.17003 2.14336C3.99903 2.05336 3.82403 2.01636 3.66503 2.03136L13.164 11.1804ZM13.164 13.1804L3.66503 22.3294C3.82403 22.3444 3.99903 22.3074 4.17003 22.2174C4.17103 22.2174 4.17203 22.2164 4.17203 22.2164L16.523 15.1194L13.164 13.1804Z" />
                                         </svg>
                                     </div>
                                     <div className="text-left leading-none">
-                                        <div className="text-[10px] uppercase font-black tracking-widest opacity-60 mb-1">Get it on</div>
-                                        <div className="text-xl font-black tracking-tight">Google Play</div>
+                                        <div className="text-[10px] uppercase font-black tracking-widest text-slate-400 mb-1">Google Play</div>
+                                        <div className="text-xl font-black tracking-tight">Coming Soon</div>
                                     </div>
                                 </button>
 
